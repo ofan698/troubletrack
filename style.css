@@ -1,0 +1,165 @@
+/* === style.css for Trouble Tracker UPPKB === */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #004c99;
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #004c99;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+nav button:hover {
+  background-color: #003366;
+}
+
+nav button.active {
+  background-color: #005bb5;
+  font-weight: bold;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button[type="submit"] {
+  background-color: #004c99;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #003366;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-controls label {
+  font-weight: bold;
+}
+
+.filter-controls select,
+.filter-controls button {
+  flex: 1;
+  min-width: 120px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+th, td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #e0ebf5;
+  color: #002244;
+}
+
+td button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+td button:hover {
+  opacity: 0.9;
+}
+
+td button:nth-child(1) {
+  background-color: #ffc107;
+  color: #000;
+}
+
+td button:nth-child(2) {
+  background-color: #dc3545;
+  color: white;
+}
+
+#statSummary {
+  text-align: center;
+  background-color: #f0f4f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#statSummary p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #004c99;
+  font-weight: bold;
+}
+
+canvas {
+  display: block;
+  margin: 30px auto 50px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .filter-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  table, thead, tbody, th, td, tr {
+    font-size: 13px;
+  }
+}
